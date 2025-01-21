@@ -8,12 +8,24 @@
   box-sizing: border-box;
 }
 
-h1 {
-  margin: 0;
-}
-
 .logo {
   font-family: 'Caveat', cursive;
   font-size: 2rem;
 }
 
+.main-header {
+  background: url(../images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  color: #f5f5dc;
+}
+
+.main-header .showcase {
+  padding-top: 100px;
+}
+
+.active-link {
+  color: #d847f1;
+  font-weight: bold;
+}
