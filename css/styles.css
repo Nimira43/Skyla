@@ -111,6 +111,23 @@ html {
 }
 
 .line-2 {
-  transform: rotate(40deg);
+  transform: rotate(-40deg);
+}
+
+.nav-list {
+  height: 100%;
+  display: flex;
+}
+
+.nav-link {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--main);
+  text-transform: uppercase;
+  width: 100%;
+  opacity: 0.8;
+  position: relative;
+  top: -100%;
+  transition: all 0.3s;
 }
 
