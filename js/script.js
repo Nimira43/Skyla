@@ -8,10 +8,11 @@ document.querySelector('.close-navbar-icon').addEventListener('click', () => {
   container.classList.remove('change')
 })
 
-const colours = ['#ffd700',  '#f4e595ff', '#f88a63ff', '#bf9382ff', '#fbc8c8ff']
+const colours = ['#000',  '#581902', '#8d2702', '#c53501', '#ff4500']
 
 let i = 0
 
 Array.from(document.querySelectorAll('.nav-link')).forEach(item => {
-  item.computedStyleMap.cssText = `background-color: ${colours[i++]}`
+  item.style.cssText = `background-color: ${colours[i++]}`
 })
+
