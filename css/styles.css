@@ -324,6 +324,7 @@ html {
   position: relative;
   z-index: 10;
   opacity: 0.9;
+  transition: opacity 0.4s, transform 0.4s;
 }
 
 .game-name {
@@ -350,7 +351,18 @@ html {
   padding-bottom: 1.5rem;
 }
 
-.back-side {}
+.back-side {
+  position: absolute;
+  top: 0;
+  background-color: var(--main);
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem;
+  flex-direction: column;
+  transform: translateZ(-5rem) translateX(3rem);
+  opacity: 0.5;
+  transition: opacity 0.4s, transform 0.4s;
+}
 
 
 @media (max-width: 1200px) {
