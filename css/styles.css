@@ -326,6 +326,15 @@ html {
   opacity: 0.9;
 }
 
+.game-name {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 30%;
+  right: 1.5rem;
+  color: blue;
+}
+
 
 
 
