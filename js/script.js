@@ -8,7 +8,7 @@ document.querySelector('.close-navbar-icon').addEventListener('click', () => {
   container.classList.remove('change')
 })
 
-const colours = ['#000',  '#581902', '#8d2702', '#c53501', '#ff4500']
+const colours = ['#ff4500', '#c53501', '#8d2702', '#581902', '#000']
 
 let i = 0
 
