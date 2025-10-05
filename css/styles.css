@@ -180,6 +180,13 @@ html {
   perspective: 100rem;  
 }
 
+.header-text {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--light);
+}
+
 @media (max-width: 1200px) {
   
 }
