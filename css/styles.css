@@ -28,10 +28,6 @@ html {
   font-size: 62.5%;
 }
 
-.logo {
-  font-family: 'Berkshire Swash', serif;
-}
-
 .centre {
   display: flex;
   justify-content: center;
@@ -198,6 +194,29 @@ html {
   color: var(--support);
   max-width: 70rem;
   margin: auto;
+}
+
+.logo h1 {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+}
+
+.logo h1 {
+  display: flex;
+}
+
+.logo h1 span {
+   font-family: 'Berkshire Swash', serif;
+  font-size: 2rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: var(--light);
+  background-color: var(--main);
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0.5rem;
+  border-radius: 50%;
 }
 
 @media (max-width: 1200px) {
