@@ -60,3 +60,10 @@ html {
   left: 6.5rem;
   z-index: 200;
 }
+
+.navbar-icon .line {
+  height: 0.2rem;
+  width: 3.5rem;
+  background-color: var(--grey-dark);
+}
+
