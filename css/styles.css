@@ -17,6 +17,7 @@
   --support-light: #fff5bd;
   --light: #fffdfa;
   --dark: #111;
+  --black: #000;
   --grey-dark: #333;
   --grey-medium: #999;
   --grey-light: #ccc;
@@ -308,6 +309,7 @@ html {
   width: 35rem;
   position: relative;
   perspective: 150rem;
+  border: 1px solid var(--main);
 }
 
 .card-image {
@@ -315,6 +317,14 @@ html {
   border-radius: 0.3rem 0.3rem 0 0;
 }
 
+.front-side {
+  background-color: var(--black);
+  text-align: center;
+  border-radius: 0.3rem;
+  position: relative;
+  z-index: 10;
+  opacity: 0.9;
+}
 
 
 
