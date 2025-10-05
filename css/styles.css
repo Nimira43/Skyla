@@ -297,7 +297,22 @@ html {
   text-align: center;
   margin-bottom: 8rem;
   color: var(--main);
-  
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 35rem;
+  position: relative;
+  perspective: 150rem;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 0.3rem 0.3rem 0 0;
 }
 
 
