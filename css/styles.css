@@ -309,7 +309,7 @@ html {
   width: 35rem;
   position: relative;
   perspective: 150rem;
-  border: 1px solid var(--main);
+  /* border: 2px solid var(--light); */
 }
 
 .card-image {
@@ -332,10 +332,25 @@ html {
   position: absolute;
   top: 30%;
   right: 1.5rem;
-  color: blue;
+  padding: 0.5rem 1.5rem;
+  color: var(--light);
+  background-color: var(--black);
 }
 
+.card-list {
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0 3rem 0;
+}
 
+.card-list-item {
+  font-size: 1.6rem;
+  color: var(--light);
+  margin: 2rem 0;
+  padding-bottom: 1.5rem;
+}
+
+.back-side {}
 
 
 @media (max-width: 1200px) {
