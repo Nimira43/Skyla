@@ -374,6 +374,32 @@ html {
   opacity: 0.9;
 }
 
+.navigation-button,
+.order-button {
+  position: absolute;
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: var(--main);
+  color: var(--light);
+  border-radius: 0.3rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+.navigation-button {
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+.order-button {
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
 @media (max-width: 1200px) {
   
 }
