@@ -179,7 +179,6 @@ html {
 
 .header-text {
   text-align: center;
-  text-transform: uppercase;
   letter-spacing: 0.1rem;
   
 }
@@ -192,7 +191,7 @@ html {
 .header-paragraph {
   font-size: 3rem;
   font-weight: 500;
-  color: var(--support);
+  color: var(--main);
   max-width: 70rem;
   margin: auto;
 }
@@ -302,7 +301,7 @@ html {
 
 .cards-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .card {
@@ -374,10 +373,16 @@ html {
   opacity: 0.9;
 }
 
+.game-description {
+  width: 80%;
+  color: var(--light);
+  text-align: center;
+  font-size: 4rem;
+}
+
 .navigation-button,
 .order-button {
   position: absolute;
-  margin: 1rem;
   padding: 0.5rem;
   background-color: var(--main);
   color: var(--light);
@@ -391,13 +396,13 @@ html {
 }
 
 .navigation-button {
-  top: 0.5rem;
-  left: 0.5rem;
+  top: 2.5rem;
+  left: 2.5rem;
 }
 
 .order-button {
-  top: 0.5rem;
-  right: 0.5rem;
+  top: 2.5rem;
+  right: 2.5rem;
 }
 
 @media (max-width: 1200px) {
