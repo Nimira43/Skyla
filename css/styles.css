@@ -16,6 +16,7 @@
   --grey-medium: #999;
   --grey-light: #ccc;
   --grey-light-extra: #eee;
+  --transition: 0.5s all ease-in-out;
 }
 
 .logo {
