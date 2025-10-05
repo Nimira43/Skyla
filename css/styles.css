@@ -305,10 +305,11 @@ html {
 }
 
 .card {
+  height: 60rem; 
+  /* temp height */
   width: 35rem;
   position: relative;
   perspective: 150rem;
-  /* border: 2px solid var(--light); */
 }
 
 .card-image {
@@ -317,6 +318,8 @@ html {
 }
 
 .front-side {
+  height: 100%;
+  /* temp height */
   background-color: var(--black);
   text-align: center;
   border-radius: 0.3rem;
@@ -331,6 +334,7 @@ html {
   opacity: 0.5;
   z-index: 0;
 }
+
 .game-name {
   font-size: 2.5rem;
   text-transform: uppercase;
@@ -352,10 +356,12 @@ html {
   font-size: 1.6rem;
   color: var(--light);
   margin: 2rem 0;
-  padding-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .back-side {
+  height: 100%;
+  /* temp height */
   position: absolute;
   top: 0;
   background-color: var(--black);
@@ -378,6 +384,14 @@ html {
   color: var(--light);
   text-align: center;
   font-size: 4rem;
+}
+
+.game-platform {
+  padding-top: 3rem;
+  width: 90%;
+  color: var(--main);
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 .navigation-button,
