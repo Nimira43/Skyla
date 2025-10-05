@@ -184,7 +184,20 @@ html {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  color: var(--light);
+  
+}
+
+.heading {
+  font-size: 8rem;
+  color: var(--light); 
+}
+
+.header-paragraph {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--support);
+  max-width: 70rem;
+  margin: auto;
 }
 
 @media (max-width: 1200px) {
