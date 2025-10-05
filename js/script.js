@@ -16,8 +16,9 @@ Array.from(document.querySelectorAll('.nav-link')).forEach(item => {
   item.style.cssText = `background-color: ${colours[i++]}`
 })
 
-Array.from(document.querySelectorAll('.navigation-button')).forEach(item => {
-  item.onclick = () => {
-    item.parentElement.parentElement.classList.toggle('change')
-  }
-}) 
+document.querySelectorAll('.navigation-button').forEach(button => {
+  button.addEventListener('click', () => {
+    const card = button.closest('.card')
+    card.classList.toggle('change')
+  })
+})
