@@ -13,7 +13,8 @@
 
 :root {
   --main: #ff4500;
-  --support: #008080;
+  --support: #ffd700;
+  --support-light: #fff5bd;
   --light: #fffdfa;
   --dark: #111;
   --grey-dark: #333;
@@ -35,4 +36,11 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container {
+  background-color: var(--support-light);
+  margin: 3.5rem;
+  box-shadow: 0 1rem 3rem var(--grey-medium); 
+  overflow: hidden;
 }
