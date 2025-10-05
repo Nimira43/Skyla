@@ -90,7 +90,7 @@ html {
   background: linear-gradient(
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.3)),
-    url('../images/navbar.jpg') center no-repeat;
+    url('../images/story-2.jpg') center no-repeat;
   background-size: cover;
   position: relative;
   overflow-y: hidden;
@@ -122,12 +122,19 @@ html {
 .nav-link {
   font-size: 3rem;
   font-weight: 500;
-  color: var(--main);
+  color: var(--light);
   text-transform: uppercase;
   width: 100%;
   opacity: 0.8;
   position: relative;
   top: -100%;
-  transition: all 0.3s;
+  transition: var(--transition);
 }
+
+.nav-link:hover {
+  opacity: 1;
+  color: var(--support);
+}
+
+
 
