@@ -53,3 +53,10 @@ html {
   cursor: pointer;
   flex-direction: column;
 }
+
+.open-navbar-icon {
+  position: fixed;
+  top: 0.5rem;
+  left: 6.5rem;
+  z-index: 200;
+}
