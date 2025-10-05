@@ -44,3 +44,12 @@ html {
   box-shadow: 0 1rem 3rem var(--grey-medium); 
   overflow: hidden;
 }
+
+.navbar-icon {
+  width: 5.5rem;
+  height: 5.5rem;
+  background-color: var(--light);
+  border-radius: 50%;
+  cursor: pointer;
+  flex-direction: column;
+}
