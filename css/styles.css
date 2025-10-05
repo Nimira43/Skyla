@@ -71,3 +71,16 @@ html {
   margin: 0.3rem 0;
 }
 
+.navbar-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: fixed;
+  left: 0;
+  bottom: -100%;
+  opacity: 0;
+  z-index: 300;
+  padding: 3.5rem 5.5rem 3.5rem 3.5rem;
+  transition: bottom 0.5s, opacity 0.2s;
+}
+
