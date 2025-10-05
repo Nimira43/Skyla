@@ -67,3 +67,7 @@ html {
   background-color: var(--grey-dark);
 }
 
+.open-navbar-icon .line {
+  margin: 0.3rem 0;
+}
+
