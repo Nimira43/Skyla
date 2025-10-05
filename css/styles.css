@@ -5,6 +5,10 @@
   font-weight: 300;
   list-style: none;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
 }
 
 :root {
@@ -25,4 +29,10 @@ html {
 
 .logo {
   font-family: 'Berkshire Swash', serif;
+}
+
+.centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
