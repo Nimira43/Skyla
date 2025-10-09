@@ -313,7 +313,6 @@ html {
 
 .card {
   height: 60rem; 
-  /* temp height */
   width: 35rem;
   position: relative;
   perspective: 150rem;
@@ -326,7 +325,6 @@ html {
 
 .front-side {
   height: 100%;
-  /* temp height */
   background-color: var(--black);
   text-align: center;
   border-radius: 0.3rem;
@@ -368,7 +366,6 @@ html {
 
 .back-side {
   height: 100%;
-  /* temp height */
   position: absolute;
   top: 0;
   background-color: var(--black);
