@@ -450,7 +450,7 @@ html {
 }
 
 .skyla-bg {
-  background-color: rgba(11, 11, 11, 0.85);
+  background-color: rgba(0, 0, 0, 0.95);
   padding: 5rem;
   margin: 5rem;
   width: 70%;
@@ -459,7 +459,7 @@ html {
 }
 
 .story {
-  transform: skeyX(-20deg);
+  transform: skewX(-20deg);
   display: flex;
 }
 
@@ -473,9 +473,16 @@ html {
 
 .story-heading {
   font-size: 2.5rem;
+  font-weight: 600;
   text-transform: uppercase;
-  color: var(--light);
+  color: var(--support);
   margin-bottom: 1rem;
+}
+
+.story-paragraph {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--support);
 }
 
 @media (max-width: 1200px) {
