@@ -449,6 +449,15 @@ html {
   align-items: center
 }
 
+.skyla-bg {
+  background-color: rgba(238, 238, 238, 0.85);
+  padding: 5rem;
+  margin: 5rem;
+  width: 70%;
+  box-shadow: 0 2rem 5rem rgba(51, 51, 51, 0.4);
+  transform: skewx(20deg);
+}
+
 @media (max-width: 1200px) {
   
 }
