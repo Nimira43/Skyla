@@ -486,7 +486,18 @@ html {
 }
 
 @media (max-width: 1200px) {
-  
+  .card-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin: 3rem 0;
+  }
+
+  .story-bg {
+    width: 85%;
+  }
 }
 
 @media (max-width: 1000px) {
