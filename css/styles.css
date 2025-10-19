@@ -423,64 +423,71 @@ html {
 }
 
 .skyla {
-  padding: 10rem 0;
   position: relative;
+  padding: 12rem 2rem;
+  color: var(--light);
+  z-index: 1;
 }
 
 .video-container {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
 }
 
 .bg-video {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
+  filter: brightness(0.3) contrast(1.2);
 }
 
-.skyla-wrapper {
+.skyla-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.story-card {
   display: flex;
   flex-direction: column;
-  align-items: center
+  background: rgba(0, 0, 0, 0.14);
+  border-left: 0.5rem solid var(--main);
+  padding: 4rem;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.6);
+  transition: transform 0.5s ease;
 }
 
-.skyla-bg {
-  background-color: rgba(0, 0, 0, 0.95);
-  padding: 5rem;
-  margin: 5rem;
-  width: 70%;
-  box-shadow: 0 2rem 5rem rgba(51, 51, 51, 0.4);
-  transform: skewx(20deg);
-}
-
-.story {
-  transform: skewX(-20deg);
-  display: flex;
+.story-card:hover {
+  transform: translateY(-1rem);
 }
 
 .story-image {
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 5rem;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  align-self: center;
+  box-shadow: 0 0 2rem rgba(255, 255, 255, 0.2);
 }
 
-.story-heading {
-  font-size: 2.5rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: var(--light);
+.story-text h2 {
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 3rem;
   margin-bottom: 1rem;
+  color: var(--support);
+  text-shadow: 0 0 1rem var(--main);
 }
 
-.story-paragraph {
-  font-size: 2rem;
-  font-weight: 600;
+.story-text p {
+  font-size: 1.8rem;
+  line-height: 1.6;
   color: var(--light);
+  opacity: 0.9;
 }
 
 @media (max-width: 1200px) {
@@ -491,10 +498,6 @@ html {
 
   .card {
     margin: 3rem 0;
-  }
-
-  .skyla-bg {
-    width: 85%;
   }
 }
 
@@ -528,17 +531,6 @@ html {
     padding-top: 2rem;
     font-size: 1.5rem;
   }
-  .skyla-bg {
-    transform: skewX(0);
-  }
-  .story {
-    transform: skewX(0);
-    flex-direction: column;
-    align-items: center;
-  }
-  .story-image {
-    margin-bottom: 3rem;
-  }
 }
 
 @media (max-width: 800px) {
@@ -548,7 +540,6 @@ html {
   .popular-games-heading {
     font-size: 5rem;
   } 
- 
 }
 
 @media (max-width: 650px) {
