@@ -500,6 +500,12 @@ html {
     background-size: cover;
 }
 
+.contact-heading {
+  font-size: 7rem;
+  margin-bottom: 8rem;
+  color: var(--light);
+}
+
 @media (max-width: 1200px) {
   .card-wrapper {
     flex-direction: column;
