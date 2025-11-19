@@ -502,7 +502,7 @@ html {
 
 .contact-heading {
   font-size: 7rem;
-  margin-bottom: 8rem;
+  margin: 8rem 0;
   color: var(--light);
 }
 
