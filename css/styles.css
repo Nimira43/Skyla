@@ -525,6 +525,10 @@ html {
   position: relative;
 }
 
+.input.groups .input-group {
+  width: 48.5%;
+}
+
 @media (max-width: 1200px) {
   .card-wrapper {
     flex-direction: column;
