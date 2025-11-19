@@ -506,6 +506,17 @@ html {
   color: var(--light);
 }
 
+.contact-form {
+  width: 70rem;
+  height: 50rem;
+  background-color: var(--black);
+  margin: auto;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  box-shadow:  0 1rem 3rem var(--black);
+  padding: 5rem;
+}
+
 @media (max-width: 1200px) {
   .card-wrapper {
     flex-direction: column;
