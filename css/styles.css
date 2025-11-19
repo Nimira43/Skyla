@@ -509,12 +509,20 @@ html {
 .contact-form {
   width: 70rem;
   height: 50rem;
-  background-color: var(--black);
+  background-color: rgba(0, 0, 0, 0.7);
   margin: auto;
   flex-direction: column;
   border-radius: 0.5rem;
   box-shadow:  0 1rem 3rem var(--black);
   padding: 5rem;
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  position: relative;
 }
 
 @media (max-width: 1200px) {
