@@ -491,13 +491,13 @@ html {
 }
 
 .contact {
-  padding: 1rem 0 20rem 0;
+  padding: 15rem 0 20rem 0;
   text-align: center;
   background: linear-gradient(
     rgba(0, 0, 0, 0.9),
     rgba(0, 0, 0, 0.8)),
     url('../images/contact.png') center no-repeat;
-    background-size: cover;
+  background-size: cover;
 }
 
 .contact-heading {
@@ -531,7 +531,7 @@ html {
   justify-content: space-between;
 }
 
-.input.groups .input-group {
+.input-groups .input-group {
   width: 48.5%;
 }
 
