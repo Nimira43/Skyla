@@ -18,6 +18,7 @@
   --light: #fffdfa;
   --dark: #111;
   --black: #000;
+  --white: #fff;
   --grey-dark: #333;
   --grey-medium: #999;
   --grey-light: #ccc;
@@ -498,6 +499,21 @@ html {
     rgba(0, 0, 0, 0.8)),
     url('../images/contact.png') center no-repeat;
   background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact::after {
+  content: '';
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8); 
+  opacity: 0;
+  pointer-events: none;
+  animation: lightning 3.5s infinite;
 }
 
 .contact-heading {
@@ -583,6 +599,26 @@ html {
   max-height: 16rem;
   max-width: 100%;
 }
+
+@keyframes lightning {
+  0%, 85%, 100% {
+    opacity: 0;
+  }
+  86% {
+    
+    opacity: 1;
+  }
+  87% {
+    opacity: 0;
+  }
+  88% {
+    opacity: 1;
+  }
+  89% {
+    opacity: 0;
+  }
+}
+
 
 @media (max-width: 1200px) {
   .card-wrapper {
