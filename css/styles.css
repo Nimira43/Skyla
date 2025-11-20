@@ -573,6 +573,12 @@ html {
   transition: var(--transition);
 }
 
+.form-btn:hover {
+  background-color: var(--main);
+  border-color: var(--main);
+  color: var(--light);
+}
+
 
 @media (max-width: 1200px) {
   .card-wrapper {
