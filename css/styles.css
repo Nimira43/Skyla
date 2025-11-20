@@ -539,11 +539,25 @@ html {
 .input-group textarea {
   padding: 3rem 1rem 1rem 1rem;
   background-color: transparent;
-  border: 0.1rem solid var(--main);
+  border: 0.1rem solid var(--light);
   font-size: 1.4rem;
   color: var(--light);
   border-radius: 3px;
+  transition: var(--transition);
+}
 
+.input-group input:focus,
+.input-group textarea:focus {
+  border: 0.1rem solid var(--main);
+}
+
+.input-group label {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: var(--light);
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 }
 
 @media (max-width: 1200px) {
