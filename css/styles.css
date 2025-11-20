@@ -525,6 +525,12 @@ html {
   position: relative;
 }
 
+.input-groups {
+  width: 100%;
+  display: flex;  
+  justify-content: space-between;
+}
+
 .input.groups .input-group {
   width: 48.5%;
 }
