@@ -619,7 +619,6 @@ html {
   }
 }
 
-
 @media (max-width: 1200px) {
   .card-wrapper {
     flex-direction: column;
