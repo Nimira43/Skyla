@@ -30,6 +30,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  background-color: var(--black);
+}
+
 .centre {
   display: flex;
   justify-content: center;
@@ -39,7 +43,7 @@ html {
 .container {
   background-color: var(--support-light);
   margin: 3.5rem;
-  box-shadow: 0 1rem 3rem var(--grey-medium); 
+  border: 2px solid var(--light);
   overflow: hidden;
 }
 
@@ -600,6 +604,59 @@ html {
   max-width: 100%;
 }
 
+.footer {
+  width: 100%;
+  background: var(--dark);
+  padding: 4rem 2rem;
+  border-top: 1px solid var(--grey-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.footer-list {
+  display: flex;
+  gap: 3.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  color: var(--light);
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  position: relative;
+  transition: var(--transition);
+}
+
+.footer-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--main);
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--support);
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+.footer-paragraph {
+  color: var(--grey-light);
+  font-size: 1.4rem;
+  text-align: center;
+  letter-spacing: 0.3px;
+  opacity: 0.8;
+}
+
 @keyframes lightning {
   0%, 85%, 100% {
     opacity: 0;
@@ -693,6 +750,16 @@ html {
   }
   .game-platform {
    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-list {
+    gap: 2rem;
+  }
+
+  .footer-link {
+    font-size: 1.6rem;
   }
 }
 
